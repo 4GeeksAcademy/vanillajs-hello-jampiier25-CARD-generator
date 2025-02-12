@@ -1,7 +1,7 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
 body{
-  background-image: url('https://media.istockphoto.com/id/157622968/es/foto/textura-de-fieltro.jpg?s=612x612&w=0&k=20&c=mmJE_JtK-IGwMGLnvaEPfaKntrGGk_hH4X_I9CvP7yU=');
+  background-image: url('https://img.freepik.com/vector-premium/fondo-mesa-poker-color-verde_47243-1068.jpg');
   background-size: cover;
   background-repeat: no-repeat;
  
@@ -31,13 +31,16 @@ a.button:hover {
   width: 300px;
   height: 440px;
   border-radius: 15px;
-  background: white;
+  background-image: url('');
   box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3);
   position: relative;
+  background-size: cover;
+  background-position-x: -70px;
 }
 .card p {
-  font: 150px/440px Arial, serif;
+  font: 160px/440px Arial, serif;
   text-align: center;
+  color:
 }
 
 div.suit-hearts:before {
@@ -124,12 +127,18 @@ button {
   font-size: 16px;
   margin: 20px auto;
   cursor: pointer;
-  background-color: #4CAF50;
-  color: white;
+  background-color: #4a994d;
+  color: rgb(0, 0, 0);
   border: none;
   border-radius: 5px;
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: #09ff78;
+}
+button.stop{
+  background-color: #4a994d;
+}
+button:hover.stop{
+  background-color: #ff0909;
 }
