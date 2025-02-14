@@ -8,7 +8,7 @@ import "./assets/img/4geeks.ico";
 window.onload = () => {
   generarCarta();
   
-}
+
 function generarCarta() {
   let cardNumber = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", ];
   let suit = ["Diamonds", "Spades", "Hearts", "Clubs"];
@@ -20,6 +20,14 @@ function generarCarta() {
   document.getElementById('theCard').className = "";
   document.getElementById('theCard').classList.add("card");
   document.getElementById('theCard').classList.add(getSuiteClass(finalSuit));
+
+  document.getElementById('ancho').addEventListener('input', e =>{
+    document.getElementById('theCard').style.width= e.target.value + 'px'
+  })
+  
+  document.getElementById('alto').addEventListener('input', e =>{
+    document.getElementById('theCard').style.height= e.target.value + 'px'
+  })
 }
 let intervalo;
 
@@ -37,7 +45,7 @@ document.getElementById("generateCard").addEventListener('click', generarCarta);
 
 function iniciarTemporizador() {
   if (!intervalo) {
-    intervalo = setInterval(generarCarta, 10000); //intervalo de 10s para usarlo con un botón//
+    intervalo = setInterval(generarCarta, 5000); //intervalo de 5s para usarlo con un botón//
   }
 }
 
@@ -53,4 +61,18 @@ document.getElementById('startButton').addEventListener('click', iniciarTemporiz
 document.getElementById('stopButton').addEventListener('click', detenerTemporizador);
 
 
-document.getElementById('cardContent').style.color = '';
+document.getElementById('cardContent').style.color = ' generarCarta ';
+
+
+//   miInput.addEventListener("input", e => {
+
+//})//
+
+//agregar un label input para modificar el width y height de la carta//
+
+
+
+
+
+
+}
