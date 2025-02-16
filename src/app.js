@@ -69,6 +69,10 @@ function generarCarta() {
     clearInterval(intervalo);
     intervalo = null;
   }
-   
+   //  creo que esta vez he ordenado algo mas el codigo o al menos lo he organizado para entender dónde y
+   //  qué esté haciendo cada cosa al igual que ya lo metí todo en el openload que es en lo que más fallo y se me olvida 
+   //  ehehe=) espero este todo lo pedido mas el toque personal que tengo, al final le puse un pikachu al background de la carta 
+   // y me gustaria aprender a ponerle un icono al title de la pagina //
+
 }
 }
