@@ -21,12 +21,13 @@ body{
   background-repeat: no-repeat;
   background-position:center;
   background-position-y:-91px ;*/
+
 }
 .card p {
   font: 160px/440px times,serif;
   text-align: center;
-}
 
+}
 div.suit-hearts:before {
   content: "♥";
   font-size: 90px;
@@ -115,13 +116,18 @@ button {
   color: rgb(0, 0, 0);
   border: none;
   border-radius: 5px;
+  transition:.55s ease ;
 }
 
 button:hover {
   background-color: #09ff78;
+  transform: scale(1.19);
+  
+
 }
 button.stop{
   background-color: #4a994d;
+
 }
 button:hover.stop{
   background-color: #ff0000c8;
